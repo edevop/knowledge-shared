@@ -28,6 +28,11 @@ body {
 @import "07-dashboards/dashboard-index";
 @import "10-mediascreen/mediascreen";
 
+.logo-type::before {
+    content: url('../../static/anonymous.svg');
+    display: inline-block;
+}
+
 #app {
     width: 100%;
     height: auto;
@@ -43,9 +48,34 @@ div#time--line {
 
 #__app-header {
     width: 100%;
-    min-height: 64px;
+    min-height: 44px;
+    max-height: 44px;
     background: map-get($gradient-color-palette, gradient-base-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+
+nav {
+    width: 100%;
+    height: 54px;
+    background: #ddd;
+    position: sticky;
+    top: -1;
 }
+
+
+
+.ml-lm1 {
+    width: 100%;
+    height: 300px;
+    background-image: url('../../static/ml-lm1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+
 
 @media screen and ( max-width: 720px ) {
     #access-session-panel {

@@ -13,7 +13,7 @@ $color-palette: (
 $gradient-color-palette: (
     gradient-base-color: #388e3c linear-gradient(0deg,#3fa044 0,#388e3c) no-repeat 0 0
 );
- 
+
 .centered-fixed {
     position: absolute;
     top     : 50%;
@@ -44,9 +44,10 @@ span {
 }
 
 a {
-    color: #02b3e4;
+    color: #0099ff;//#02b3e4;
     text-decoration: none;
     font-weight: 600;
+    text-decoration: underline;
 }
 
 .input--group {
